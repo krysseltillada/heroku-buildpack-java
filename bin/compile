@@ -4,9 +4,6 @@ indent() {
     sed -u 's/^/      /'
 }
 
-echo "Copied ${PROCFILE} as Procfile successfully" | indent
-
-
 # bin/compile <build-dir> <cache-dir> <env-dir>
 
 # fail fast
@@ -32,6 +29,8 @@ if ! [ $? ]; then
     echo "FAILED to copy a Procfile" | indent
     exit 1
 fi
+
+echo "Copied ${PROCFILE} as Procfile successfully" | indent
 
 source $BP_DIR/lib/common.sh
 source $BP_DIR/lib/maven.sh
