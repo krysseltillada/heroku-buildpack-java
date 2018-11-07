@@ -1,7 +1,7 @@
 # Heroku Multi Procfile buildpack for java 
 
 im deploying an app in heroku that was in a multi module java project
-but heroku doesnt support multiple procfile to start a java app luckily i got
+but heroku doesnt support multiple procfile to start a java app luckily i found
 a buildpack that is a multi procfile buildpack 
 https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-multi-procfile.
 and combined to this buildpack 
